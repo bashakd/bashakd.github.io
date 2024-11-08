@@ -107,8 +107,3 @@ function closePopup() {
     document.body.classList.remove('blur');
 }
 
-// Add event listener to all tourist__card elements
-const touristCards = document.querySelectorAll('.tourist__card');
-touristCards.forEach(card => {
-    card.addEventListener('click', showInfo);
-});
