@@ -344,30 +344,25 @@ img {
 }
 
 /*=============== VISAYAS ===============*/
-.vis__container {
-  position: relative;
-  grid-template-columns: repeat(2, 1fr);
-}
+
 
 .vis__data {
+
   padding: 5rem 0 3rem;
 }
 
 .vis__img {
+
   width: 250px;
   border-radius: 5%;
-  position: absolute;
-  left: -7rem;
 }
 
 .vis__description {
+
   margin-bottom: var(--mb-1-5);
   line-height: var(--text-line-height);
 }
 
-.hidden {
-  display: none;
-}
 
 /*=============== DISCOUNT ===============*/
 .discount__container {
