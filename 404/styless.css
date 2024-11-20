@@ -1,0 +1,105 @@
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column; /* Arrange elements vertically */
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll on mobile */
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    width: 100%; /* Make container full width */
+    max-width: 400px; /* Limit container width for better mobile experience */
+    padding: 20px; /* Add padding for better readability */
+}
+
+.error-text {
+    font-size: 4em; /* Adjust font size for mobile */
+    font-family: 'Impact', sans-serif;
+    animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(0, 0);
+        text-shadow: 0 0 5px #ff0000;
+    }
+    50% {
+        transform: translate(5px, -5px);
+        text-shadow: 0 0 10px #ff0000;
+    }
+    100% {
+        transform: translate(0, 0);
+        text-shadow: 0 0 5px #ff0000;
+    }
+}
+
+.message {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+#snakeCanvas {
+    background-color: #222;
+    border-radius: 10px;
+    margin: 20px auto; /* Adjust margin for mobile */
+    width: 100%; /* Make canvas full width */
+    max-height: 300px; /* Limit canvas height for better mobile experience */
+
+    /* Fix for PC -- Set a fixed size for larger screens */
+    @media (min-width: 600px) { 
+        width: 300px; /* Set a fixed width for PC */
+        height: 150px; /* Set a fixed height for PC */
+    }
+}
+
+.button-container {
+    display: flex; /* Use flexbox for button alignment */
+    justify-content: center; /* Center the buttons */
+    margin-bottom: 20px; /* Add margin below the buttons */
+}
+
+#startButton, #restartButton { /* Align the buttons */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Add space between buttons */
+}
+
+#restartButton {
+    display: none; /* Hide by default */
+}
+
+
+/* Mobile Controls */
+.mobile-controls {
+    display: none; /* Hide by default */
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+}
+
+.mobile-controls button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
