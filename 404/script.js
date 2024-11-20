@@ -26,11 +26,9 @@ document.addEventListener('DOMContentLoaded', function() {
         if (window.innerWidth <= 600) {
             canvas.width = window.innerWidth * 0.8; 
             canvas.height = window.innerHeight * 0.6; 
-            mobileControls.style.display = 'block'; 
         } else {
             canvas.width = 300;
             canvas.height = 150;
-            mobileControls.style.display = 'none'; 
         }
     }
 
