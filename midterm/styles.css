@@ -1,0 +1,178 @@
+/* General Body Styling */
+body {
+    background: linear-gradient(to bottom, #212121, #1E1E1E); 
+    color: #FFFFFF; 
+    font-family: 'Roboto', sans-serif; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-size: 16px; 
+    line-height: 1.6; 
+}
+
+/* Header Styling - Valorant Inspired */
+header {
+    text-align: center;
+    color: #FF4655;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+/* Agent Card Styling */
+.agent-card {
+    background-color: #2B2B2B;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); 
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.agent-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6); 
+}
+
+.agent-card img {
+    width: 100%;
+    height: 220px; 
+    object-fit: cover;
+    border-radius: 10px 10px 0 0; 
+}
+
+.agent-info {
+    padding: 15px;
+    background-color: #333333;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.agent-name {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #FF4655; 
+}
+
+.agent-role {
+    color: #AAAAAA;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.agent-voice-line {
+    cursor: pointer;
+    background-color: #FF4655; 
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.agent-voice-line:hover {
+    background-color: #e03b4b; 
+    transform: scale(1.1); 
+}
+
+/* Role Button Styling */
+#role-buttons .btn {
+    background-color: #FF4655;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#role-buttons .btn:hover {
+    background-color: #e03b4b;
+    color: white;
+}
+
+/* Hover Animation for Buttons */
+#role-buttons .btn:active {
+    transform: scale(0.98); 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; 
+    }
+
+    .agent-card img {
+        height: 180px; 
+    }
+
+    header {
+        font-size: 2rem;
+    }
+}
+
+/* Coffee Section Styling */
+#coffee-gallery {
+    padding: 30px 0;
+    color: #FFFFFF; 
+}
+
+.coffee-section-title {
+    font-size: 2rem;
+    color: #FF4655;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.coffee-card {
+    background-color: #2B2B2B;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #CCCCCC; 
+}
+
+.coffee-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.coffee-card img {
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    object-fit: cover;
+}
+
+.coffee-card .card-body {
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.coffee-card .card-title {
+    font-size: 18px;
+    color: #FF4655;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.coffee-card .card-text {
+    font-size: 14px;
+    color: #CCCCCC;
+    text-align: justify;
+}
